@@ -104,7 +104,6 @@ function constructMap() {
           return "translate(" + projection([parseFloat(d.lng) + parseFloat(d.dx), parseFloat(d.lat) + parseFloat(d.dy)]) + ")";
         })
         .text(function(d) {
-          console.log(d.name);
           return d.name;
         });
   });
